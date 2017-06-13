@@ -150,6 +150,7 @@ section.main.quote {
   }
 }
 
+<<<<<<< Updated upstream
 section.main.quote:hover {
   box-shadow: 0px 0px 20px #d3d3d3;
 }
@@ -170,6 +171,23 @@ article.main.info {
       width: 100%;
       height: 400px;
       background-color: grey;
+=======
+article.main.info {
+  padding: 0;
+  .left {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    background: #fff;
+    color: $brand;
+    border-bottom: 2px solid $brand;
+    margin-bottom: 20px;
+    h2 {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $gray;
+      margin-bottom: 20px;
+      width: 70%;
+>>>>>>> Stashed changes
     }
   }
 }
