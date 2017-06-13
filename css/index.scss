@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Overpass');
 $open: 'Open Sans', sans-serif;
 $overpass: 'Overpass', sans-serif;
-$brand: #761215;
+$brand: #8c0002;
 $gray: #3d3d3d;
 $background: #f7f7f7;
 
@@ -23,6 +23,21 @@ h2, p, span, li {
   font-family: $open;
 }
 
+section.banner {
+  background: $brand;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  p {
+    display: inline;
+  }
+  #message {
+    margin-right: 10px;
+  }
+}
+
 header.nav {
   margin-bottom: 15px;
   section {
@@ -39,11 +54,16 @@ header.nav {
         padding: 10px 10px;
         margin: 0 5px;
         cursor: pointer;
-        color: $gray;
+        a {
+          color: $gray;
+          text-decoration: none;
+        }
       }
       li:hover {
-        color: $brand;
-        font-weight: bold;
+        a {
+          color: $brand;
+          font-weight: bold;
+        }
       }
     }
   }
