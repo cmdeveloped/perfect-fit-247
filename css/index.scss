@@ -59,6 +59,7 @@ header.nav {
         padding: 10px 10px;
         margin: 0 5px;
         cursor: pointer;
+        text-align: center;
         a {
           color: $gray;
           text-decoration: none;
@@ -67,7 +68,6 @@ header.nav {
       li:hover {
         a {
           color: $brand;
-          font-weight: bold;
         }
       }
     }
@@ -162,6 +162,27 @@ section.main.quote:hover {
 article.main.info {
   padding: 0;
   margin-bottom: 20px;
+  .left {
+    width: 48%;
+    margin-right: 2%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    background: #fff;
+    color: $gray;
+    border-right: 2px solid $brand;
+    margin-bottom: 20px;
+    h2 {
+      color: $brand;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $background;
+      margin-bottom: 20px;
+      width: 70%;
+    }
+  }
+  .left:hover {
+    box-shadow: 0px 0px 20px #d3d3d3;
+  }
   .right {
     padding: 0;
     background: #8c0002;
@@ -177,21 +198,6 @@ article.main.info {
       margin: 0;
       padding: 10px;
     }
-  .left {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-    background: #fff;
-    color: $brand;
-    border-bottom: 2px solid $brand;
-    margin-bottom: 20px;
-    h2 {
-      padding-bottom: 10px;
-      border-bottom: 2px solid $gray;
-      margin-bottom: 20px;
-      width: 70%;
-    }
-  }
   #map {
     width: 100%;
     height: 400px;
