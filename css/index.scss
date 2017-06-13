@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Overpass');
 $open: 'Open Sans', sans-serif;
 $overpass: 'Overpass', sans-serif;
+$calibri: 'Calibri', sans-serif;
 $brand: #8c0002;
 $gray: #3d3d3d;
 $background: #f7f7f7;
@@ -15,12 +16,13 @@ html, body {
 }
 
 h1, h3, h4, h5, h6 {
-  font-family: $overpass;
+  font-family: $calibri;
   text-transform: uppercase;
 }
 
-h2, p, span, li {
+h2, span, {
   font-family: $open;
+  text-transform: uppercase;
 }
 
 section.banner {
@@ -42,8 +44,11 @@ header.nav {
   margin-bottom: 15px;
   section {
     h1 {
-      margin-top: 30px;
-      color: $brand;
+      margin: 20px 0 10px 0;
+      color: #8c0002;
+      font-family: $calibri;
+      font-style: italic;
+      font-size: 45px;
     }
     ul {
       margin-top: 25px;
@@ -117,7 +122,7 @@ article.main.welcome {
     border-bottom: 2px solid $brand;
     h2 {
       padding-bottom: 10px;
-      border-bottom: 2px solid $gray;
+      border-bottom: 2px solid $background;
       margin-bottom: 20px;
       width: 70%;
     }
@@ -150,7 +155,6 @@ section.main.quote {
   }
 }
 
-<<<<<<< Updated upstream
 section.main.quote:hover {
   box-shadow: 0px 0px 20px #d3d3d3;
 }
@@ -160,20 +164,19 @@ article.main.info {
   margin-bottom: 20px;
   .right {
     padding: 0;
-    h1 {
-      text-align: center;
-      margin: 0;
-      background: #8c0002;
+    background: #8c0002;
+    color: #fff;
+    text-align: center;
+    a {
       color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
       padding: 10px;
     }
-    #map {
-      width: 100%;
-      height: 400px;
-      background-color: grey;
-=======
-article.main.info {
-  padding: 0;
   .left {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -187,7 +190,13 @@ article.main.info {
       border-bottom: 2px solid $gray;
       margin-bottom: 20px;
       width: 70%;
->>>>>>> Stashed changes
+    }
+  }
+  #map {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    background-color: grey;
     }
   }
 }
