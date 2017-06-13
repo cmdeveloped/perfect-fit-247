@@ -87,8 +87,28 @@
     <section class='col-md-6 left'>
     </section>
     <section class='col-md-6 right'>
+      <h1>Come See Us!</h1>
+      <div id="map"></div>
     </section>
   </artcle>
+
+<!-- Google Maps Scripts -->
+  <script>
+   function initMap() {
+        var pfit = {lat: 30.7159281, lng: -86.5691328};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: pfit
+        });
+        var marker = new google.maps.Marker({
+          position: pfit,
+          map: map
+        });
+      }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzqTlo5wlU8GykEfcgjt0uIXbCv1NiRkc&callback=initMap">
+  </script>
 
 </body>
 
