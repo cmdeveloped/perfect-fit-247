@@ -165,7 +165,7 @@ section.main.quote:hover {
 
 article.main.info {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px !important;
   .left {
     padding: 25px 50px;
     background: #fff;
@@ -204,6 +204,19 @@ article.main.info {
     margin-top: 10px;
     background-color: grey;
     }
+  }
+}
+
+footer.footer {
+  margin: 0 !important;
+  background: #fff;
+  padding: 12px 30px;
+  border-top: 2px solid $brand;
+  p {
+    margin: 0;
+  }
+  .right {
+    text-align: right;
   }
 }
 
@@ -251,6 +264,15 @@ article.main.info {
   article.main.info {
     .left {
       margin-bottom: 40px;
+    }
+  }
+
+  footer.footer {
+    .left {
+      text-align: center;
+    }
+    .right {
+      text-align: center;
     }
   }
 
