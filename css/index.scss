@@ -186,9 +186,12 @@ article.main.mission {
 section.main.media {
   margin-bottom: 40px !important;
   .left {
-    img {
-      width: inherit;
-    }
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position-x: -50px;
+    background-repeat: none;
+    padding-left: 0;
+    height: 509px;
   }
   .right {
     padding: 0;
@@ -271,6 +274,16 @@ footer.footer {
   article.main.info {
     .left {
       margin-bottom: 40px;
+    }
+  }
+
+  section.main.media {
+    .left {
+      background-position-x: 0; 
+      background-repeat: no-repeat;
+      padding-left: 0;
+      height: 300px;
+      margin-bottom: 20px;
     }
   }
 
