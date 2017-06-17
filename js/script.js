@@ -27,7 +27,7 @@ $(document).ready(function() {
           break;
   }
 
-  document.getElementById("message").innerHTML = 'Today&#39s Hours: ';
+  document.getElementById("message").innerHTML = 'Today&#39s Staffed Hours: ';
   document.getElementById("hours").innerHTML = text;
 
 });
