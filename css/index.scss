@@ -252,6 +252,7 @@ footer.footer {
   }
 
   article.main.welcome {
+    border: none !important;
     .left {
       margin: 20px 0 40px 0;
       background: #fff;
@@ -279,7 +280,7 @@ footer.footer {
 
   section.main.media {
     .left {
-      background-position-x: 0; 
+      background-position-x: 0;
       background-repeat: no-repeat;
       padding-left: 0;
       height: 300px;
